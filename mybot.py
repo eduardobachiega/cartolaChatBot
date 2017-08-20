@@ -12,7 +12,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 logger = logging.getLogger(__name__)
 
-api = cartolafc.Api(email='allan75silva@yahoo.com.br', password='sevirabrother', attempts=10)
+api = cartolafc.Api(email='<cartola@email>', password='cartolapswd', attempts=10)
 
 def start(bot, update):
     update.message.reply_text('Ola! Eu sou um bot para dar informacoes do cartola!')
@@ -228,7 +228,7 @@ def getLeagueByName(leagueName):
 		return str(e)
 		
 def main():
-    updater = Updater("379341428:AAFb9lsdw7ISbRYENaiXqV3w7J4aaTJ8LDo")
+    updater = Updater("<TELEGRAM-CHATBOT-TOKEN>")
 
     dp = updater.dispatcher
 
